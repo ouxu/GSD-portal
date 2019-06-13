@@ -1,0 +1,23 @@
+
+lib/core/metadata.js
+lib/core/MetadataBlog.js
+
+translated_docs
+build/
+i18n/*
+
+# idea
+.idea/
+.vscode/
+
+# dependencies
+/node_modules
+package-lock.json
+
+# production
+/build
+
+# misc
+.DS_Store
+npm-debug.log*
+
