@@ -4,10 +4,12 @@
   "alias": ["gsd.outxu.cn"],
   "public": false,
   "builds": [
-      { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build/gsd"} }
+      { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build/gsd"} },
+      { "src": "umi/*", "use": "@now/static" },
+      { "src": "umi/static/*.png", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "/console(.*)", "dest": "/console/index.html" },
-    { "src": "/login(.*)", "dest": "/console/index.html" }
+    { "src": "/console(.*)", "dest": "/umi/index.html" },
+    { "src": "/login(.*)", "dest": "/umi/index.html" }
   ]
 }
