@@ -12,7 +12,7 @@ const users = [
 ];
 
 const consoleConfig = {
-  url: '/console'
+  url: '/login'
 }
 
 const siteConfig = {
