@@ -7,7 +7,7 @@
       { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build/gsd"} }
   ],
   "routes": [
-    { "src": "/console(.*)", "dest": "/404.html" },
-    { "src": "/login(.*)", "dest": "/404.html" }
+    { "src": "/console(.*)", "dest": "/console/index.html" },
+    { "src": "/login(.*)", "dest": "/console/index.html" }
   ]
 }
