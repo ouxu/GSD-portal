@@ -3,13 +3,10 @@
   "name": "gsd-web",
   "alias": ["gsd.outxu.cn"],
   "public": false,
-  "builds": [
-      { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build/gsd"} },
-      { "src": "umi/*", "use": "@now/static" },
-      { "src": "umi/static/*.png", "use": "@now/static" }
-  ],
+  "builds": [{ "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build/gsd" } }],
   "routes": [
-    { "src": "/console(.*)", "dest": "/umi/index.html" },
-    { "src": "/login(.*)", "dest": "/umi/index.html" }
+    { "src": "/umi(.*)", "dest": "https://gsd-console.ouxu.now.sh" },
+    { "src": "/console(.*)", "dest": "https://gsd-console.ouxu.now.sh" },
+    { "src": "/login(.*)", "dest": "https://gsd-console.ouxu.now.sh" }
   ]
 }

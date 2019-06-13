@@ -48,7 +48,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/logo-full.png',
   footerIcon: 'img/logo-full.png',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
 
   // custom docs path
   customDocsPath: path.parse(__dirname).name + '/docs',
